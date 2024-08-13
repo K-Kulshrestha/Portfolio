@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-export default {
+const config = {
   output: 'export',
   trailingSlash: true,
   images: {
@@ -11,3 +11,5 @@ export default {
   },
   basePath: '/K-Kulshrestha.github.io',
 };
+
+export default config;
