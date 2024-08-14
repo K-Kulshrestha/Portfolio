@@ -188,7 +188,8 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I have worked on a multitude of things. I have been part of diverse experiences.
+                  During my time in university, I have worked on a multitude of things. I have been part of diverse experiences. 
+                  Each opportunity opened my eyes to the boundless potential of creativity and teamwork, revealing just how much can be achieved when passionate individuals come together.
                 </p>
               </div>
             </div>

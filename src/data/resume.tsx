@@ -88,6 +88,18 @@ export const DATA = {
       description:
         "Delivered a web design curriculum for middle school students covering HTML and CSS, guiding 20 students in Carroll ISD to create their own websites. Managed a class of 40 children (ages 5-12) at YMCA, teaching foundational programming through Scratch and Scratch Jr., resulting in a 20% increase in student participation. Recognized as a top-rated part-time instructor for exceptional teaching effectiveness and student engagement, achieving a 95% student satisfaction rate.",
     },
+    {
+      company: "University of Texas at Dallas",
+      badges: [],
+      href: "https://www.rexk12.com/",
+      location: "Dallas, TX",
+      title: "Engagement Representative",
+      logoUrl: "/utd.png",
+      start: "September 2022",
+      end: "January 2023",
+      description:  
+        "Harnessed exceptional interpersonal skills to forge lasting relationships with over 100 college alumni, raising $4k for UT Dallas scholarships and essential resources, while meticulously tracking engagement outcomes to enhance donor impact and student success.",
+    },
   ],
   education: [
     {
@@ -102,53 +114,53 @@ export const DATA = {
   experience: [
     {
       organization: "Headstarter AI",
-      href: "https://uxutd.com/",
+      href: "https://headstarter.co/",
       role: "SWE Fellow",
       logoUrl: "/headstarter.jpg",
-      start: "May 2017",
-      end: "August 2017",
+      start: "July 2024",
+      end: "Present",
       description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
+        "Developed a personal website with NextJS, TypeScript, and React. Created a Pantry Tracker app using ReactJS, NextJS, and Firebase. Integrated AI customer support with OpenAI and AWS, enhancing user engagement. Managing shipments to 1,000+ users and delivering presentations to engineering teams.",
     },
     {
       organization: "User Experience Club",
       href: "https://uxutd.com/",
       role: "Vice President",
       logoUrl: "/uxutd.jpg",
-      start: "May 2017",
-      end: "August 2017",
+      start: "October 2023",
+      end: "Present",
       description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
+        "Lead a team of 17 in organizing the inaugural design-a-thon for UX Club at UTD, driving member engagement and collaboration within a community of 630+ members and 50+ sponsors.",
     },
     {
       organization: "ACM UTD",
-      href: "https://uxutd.com/",
+      href: "https://acmutd.co/",
       role: "Student Researcher",
       logoUrl: "/acmutd.jpg",
-      start: "May 2017",
-      end: "August 2017",
+      start: "Feburary 2024",
+      end: "May 2024",
       description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
+        "Developed a multimodal system integrating BERT for sentiment analysis and ResNet for image classification, improving accuracy by 20% and precision by 25% in analyzing persuasive techniques.",
     },
     {
-      organization: "SASE",
-      href: "https://uxutd.com/",
+      organization: "SASE UTD",
+      href: "https://www.instagram.com/sase.utd/",
       role: "Professional Committee Officer",
       logoUrl: "/sase.jpg",
-      start: "May 2017",
-      end: "August 2017",
+      start: "July 2023",
+      end: "June 2024",
       description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
+        "Increased member engagement by 30%, secured industry partnerships, and launched a successful mentorship program, leading to a 15% rise in internship placements.",
     },
     {
       organization: "Bronc Botz",
-      href: "https://uxutd.com/",
+      href: "https://www.broncbotz.org/",
       role: "Mentor",
       logoUrl: "/broncbotz.png",
-      start: "May 2017",
-      end: "August 2017",
+      start: "May 2019",
+      end: "July 2021",
       description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
+        "Mentor for the FIRST Robotics Competition (FRC), leading a team to build a 125-pound robot, achieving a top 10% regional finish and completing over 30 complex tasks, while being recognized as a Dean's List Semifinalist for outstanding mentorship.",
     }
   ],
   projects: [
@@ -276,7 +288,18 @@ export const DATA = {
   ],
   hackathons: [
     {
-      title: "HackUTD X",
+      title: "UXUTD Website",
+      dates: "November 23rd - 25th, 2018",
+      location: "Dallas, Texas",
+      description:
+        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [],
+    },
+    {
+      title: "Axxess Hackathon : Second Iteration",
       dates: "November 23rd - 25th, 2018",
       location: "Dallas, Texas",
       description:
@@ -288,17 +311,54 @@ export const DATA = {
     },
     {
       title: "Axxess Hackathon : First Iteration",
-      dates: "November 23rd - 25th, 2018",
+      dates: "October 29, 2016",
       location: "Dallas, Texas",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Developed an internal widget for uploading assignments using Waterloo's portal app",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/UWPortalSDK/crowmark",
+        },
+      ],
     },
     {
-      title: "Engagment Representative",
+      title: "Axxess Hackathon : First Iteration",
+      dates: "October 29, 2016",
+      location: "Dallas, Texas",
+      description:
+        "Developed an internal widget for uploading assignments using Waterloo's portal app",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/UWPortalSDK/crowmark",
+        },
+      ],
+    },
+    {
+      title: "Axxess Hackathon : First Iteration",
+      dates: "October 29, 2016",
+      location: "Dallas, Texas",
+      description:
+        "Developed an internal widget for uploading assignments using Waterloo's portal app",
+      image:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/UWPortalSDK/crowmark",
+        },
+      ],
+    },
+    {
+      title: "Axxess Hackathon : First Iteration",
       dates: "October 29, 2016",
       location: "Dallas, Texas",
       description:
