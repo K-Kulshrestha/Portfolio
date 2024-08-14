@@ -1,11 +1,10 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import nursenav from "@/images/NurseNavThumbnail.jpg"
 
 export const DATA = {
   name: "Kshitij Kulshrestha",
   initials: "KK",
-  url: "https://kshitij.io",
+  url: "https://k-kulshrestha.vercel.app/",
   location: "Dallas, TX",
   locationLink: "https://www.google.com/maps/place/dallas",
   description:
@@ -40,12 +39,12 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/K-Kulshrestha",
         icon: Icons.github,
-
         navbar: true,
+        target: "_blank",
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/kshitijkulshrestha/",
         icon: Icons.linkedin,
         navbar: true,
       },
@@ -59,7 +58,7 @@ export const DATA = {
         name: "Send Email",
         url: "mailto:kshitijkuls6@gmail.com",
         icon: Icons.email,
-        navbar: false,
+        navbar: true,
       },
     },
   },
@@ -177,9 +176,8 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "",
+      image: "/images/NurseNavThumbnail.jpg",
+      video: "",
     },
     {
       title: "Magic UI",

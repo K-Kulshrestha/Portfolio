@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+import Image from 'next/image';
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -52,7 +52,7 @@ export function ProjectCard({
       >
         {video && (
           <video
-            src={video}
+            src={video}   
             autoPlay
             loop
             muted
@@ -61,13 +61,14 @@ export function ProjectCard({
           />
         )}
         {image && (
-          <Image
-            src={image}
-            alt={title}
-            width={500}
-            height={300}
-            className="h-40 w-full overflow-hidden object-cover object-top"
-          />
+      <Image
+      src={image}
+      alt={title}
+      width={500}
+      height={300}
+      layout="responsive" // Or "fixed" or "responsive" based on your needs
+      className="object-cover"
+    />   
         )}
       </Link>
       <CardHeader className="px-2">
