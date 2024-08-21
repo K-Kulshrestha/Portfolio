@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { title } from "process";
 
 export const DATA = {
   name: "Kshitij Kulshrestha",
@@ -8,28 +9,38 @@ export const DATA = {
   location: "Dallas, TX",
   locationLink: "https://www.google.com/maps/place/dallas",
   description:
-    "Software Engineer. I love growing communities and building projects. Very active on VS Code and Discord",
+    "AI Engineer. I love growing communities and building projects. Very active on VS Code and Discord",
   summary:
     "My journey started in high school with FRC Robotics, sparking my interest in tech. In college, I dove into web development through [hackathons](#hackathons), which led me to UX design. As a [Software Engineer Intern at TuneTunnel](#work), I honed my skills, and now I continue this journey at Headstarter. At the [University of Texas at Dallas](#education), [I lead a team of 17 officers as Vice President of the User Experience Club](#experience), driving innovative [projects](#projects) that blend creativity with technical expertise.",
   avatarUrl: "/me.jpg",
   skills: [
+    "Python",
+    "Go",
+    "R",
+    "Java",
+    "C++",
+    "C",
+    "Bootstrap",
+    "jQuery",
+    "Angular",
+    "OpenCV",
+    "Django",
+    "Flask",
+    "Tailwind",
     "React",
     "Next.js",
     "Typescript",
     "Node.js",
-    "Python",
-    "Go",
-    "Postgres",
-    "Docker",
-    "Kubernetes",
-    "Java",
-    "C++",
+    "SQL",
     "Firebase",
     "MongoDB",
+    "AWS",
+    "Google Cloud",
+    "Google Analytics",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "kshitijkuls6@gmail.com",
@@ -133,16 +144,6 @@ export const DATA = {
         "Lead a team of 17 in organizing the inaugural design-a-thon for UX Club at UTD, driving member engagement and collaboration within a community of 630+ members and 50+ sponsors.",
     },
     {
-      organization: "ACM UTD",
-      href: "https://acmutd.co/",
-      role: "Student Researcher",
-      logoUrl: "/acmutd.jpg",
-      start: "Feburary 2024",
-      end: "May 2024",
-      description:
-        "Developed a multimodal system integrating BERT for sentiment analysis and ResNet for image classification, improving accuracy by 20% and precision by 25% in analyzing persuasive techniques.",
-    },
-    {
       organization: "SASE UTD",
       href: "https://www.instagram.com/sase.utd/",
       role: "Professional Committee Officer",
@@ -165,206 +166,205 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "NurseNav",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Swift-Cards",
+      href: "https://swift-cards.vercel.app/",
+      target: "_blank",
+      dates: "August 2024 - Ongoing",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Create, group, and store flashcards easily, with options to generate cards from prompts and choose flexible payment plans. Perfect for streamlined study and learning.",
       technologies: [
         "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "Firebase",
+        "Clerk",
         "TailwindCSS",
         "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Llama 3.1",
+        "MUI",
+        "Google Analytics"
       ],
       links: [
         {
-          type: "Website",
-          href: "https://chatcollect.com",
+          type: "Live Demo",
+          href: "https://swift-cards.vercel.app/",
+          target: "_blank",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Source",
+          href: "https://github.com/hemkan/swift-cards",
+          target: "_blank",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
-      image: "/images/NurseNavThumbnail.jpg",
+      image: "SwiftCards.jpg",
       video: "",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "Gourmet Guide",
+      href: "https://gourmetguide.vercel.app/",
+      target: "_blank",
+      dates: "June 2024 - July 2024",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "A virtual kitchen companion that offers tailored recipe suggestions, meal planning, and shopping lists based on your preferences and ingredients.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+       "Next.js",
+       "Firebase",
+       "TailwindCSS",
+       "Stripe",
+       "Llama 3.1",
+       "MUI"
       ],
       links: [
         {
-          type: "Website",
-          href: "https://magicui.design",
+          type: "Live Demo",
+          href: "https://gourmetguide.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/hemkan/gourmet-guide",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "gourmetguide.jpg",
+      video: "",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "NomNomNet",
+      href: "https://nomnomnet.vercel.app",
+      dates: "June 2024 - Ongoing",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Track pantry ingredients, get personalized recipe suggestions, and reduce food waste by using what you already have.",
       technologies: [
         "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "Firebase",
+        "React",
+        "Node.js",
+        "MUI",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://llm.report",
+          type: "Live Demo",
+          href: "https://nomnomnet.vercel.app",
+          target: "_blank",
           icon: <Icons.globe className="size-3" />,
         },
+      ],
+      image: "/NomNomNet.jpg",
+      video: "",
+    },
+    {
+      title: "Nurse Nav",
+      href: "https://github.com/SriNethala317/NurseNav",
+      dates: "April 2023 - Ongoing",
+      active: true,
+      description:
+        "Connects families with trusted local healthcare providers for children with special needs, ensuring access to the best care.",
+      technologies: [
+        "Python",
+        "Flask",
+        "MapBox",
+        "MongoDB",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      links: [
         {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          href: "https://github.com/SriNethala317/NurseNav",
+          target: "_blank",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
+      image: "NurseNav.jpg",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "",
     },
   ],
   hackathons: [
     {
       title: "UXUTD Website",
-      dates: "November 23rd - 25th, 2018",
+      dates: "May - Ongoing",
       location: "Dallas, Texas",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Led the development and successful launch of our club's website, ensuring a seamless user experience and professional design.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
+        "uxutd.jpg",
+      mlh: "",
+      links: [
+        {
+          title: "Website",
+          type: "Website",
+          href: "https://uxutd.com/",
+          icon: <Icons.globe className="size-3" />,
+          target: "_blank",
+        },
+      ],
+    },
+    {
+      title: "ACM Research : Feelings Behind Words",
+      dates: "Feburary - May 2024",
+      location: "Dallas, Texas",
+      description:
+        "Developed a multimodal model integrating BERT for sentiment analysis and ResNet for image classification, to analyze persuasive techniques.",
+      image:
+        "acmutd.jpg",
+      links: [
+        {
+          title: "Poster",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "Feelings_Behind_Words.pdf",
+          target: "_blank",
+        },
+      ],
     },
     {
       title: "Axxess Hackathon : Second Iteration",
-      dates: "November 23rd - 25th, 2018",
+      dates: "Feburary 17 - 18,2024",
       location: "Dallas, Texas",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Developed a React Native app to identify opioid overdose using camera detection to assess pupils in three simple steps.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
+        "axxess.png",
+      mlh: "",
+      links: [
+        {
+          title: "Dev Post",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://devpost.com/software/od",
+          target: "_blank",
+        },
+      ],
     },
     {
-      title: "Axxess Hackathon : First Iteration",
-      dates: "October 29, 2016",
+      title: "HackUTD X : Golden Hour",
+      dates: "November 4 - 5,2023",
       location: "Dallas, Texas",
       description:
-        "Developed an internal widget for uploading assignments using Waterloo's portal app",
+        "Created a dashboard to simplify and expedite the process of obtaining insurance quotes for small businesses.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
+        "hackutd.png",
       links: [
         {
           title: "Source",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/UWPortalSDK/crowmark",
+          href: "https://github.com/K-Kulshrestha/PolicyPioneer",
+          target: "_blank",
         },
       ],
     },
     {
       title: "Axxess Hackathon : First Iteration",
-      dates: "October 29, 2016",
+      dates: "April 1 - 2,2023",
       location: "Dallas, Texas",
       description:
-        "Developed an internal widget for uploading assignments using Waterloo's portal app",
+        "Developed a web application to help families find reliable healthcare providers nearby for children with special needs.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/UWPortalSDK/crowmark",
-        },
-      ],
-    },
-    {
-      title: "Axxess Hackathon : First Iteration",
-      dates: "October 29, 2016",
-      location: "Dallas, Texas",
-      description:
-        "Developed an internal widget for uploading assignments using Waterloo's portal app",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/UWPortalSDK/crowmark",
-        },
-      ],
-    },
-    {
-      title: "Axxess Hackathon : First Iteration",
-      dates: "October 29, 2016",
-      location: "Dallas, Texas",
-      description:
-        "Developed an internal widget for uploading assignments using Waterloo's portal app",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
+        "axxess.png",
       links: [
         {
           title: "Source",
