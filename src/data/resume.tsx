@@ -9,7 +9,7 @@ export const DATA = {
   location: "Dallas, TX",
   locationLink: "https://www.google.com/maps/place/dallas",
   description:
-    "AI Engineer. I love growing communities and building projects. Very active on VS Code and Discord",
+    "Full-stack Developer. I love growing communities and building projects. Very active on VS Code and Discord",
   summary:
     "My journey started in high school with FRC Robotics, sparking my interest in tech. In college, I dove into web development through [hackathons](#hackathons), which led me to UX design. As a [Software Engineer Intern at TuneTunnel](#work), I honed my skills, and now I continue this journey at Headstarter. At the [University of Texas at Dallas](#education), [I lead a team of 17 officers as Vice President of the User Experience Club](#experience), driving innovative [projects](#projects) that blend creativity with technical expertise.",
   avatarUrl: "/me.jpg",
@@ -108,7 +108,7 @@ export const DATA = {
       logoUrl: "/utd.png",
       start: "September 2022",
       end: "January 2023",
-      description:  
+      description:
         "Harnessed exceptional interpersonal skills to forge lasting relationships with over 100 college alumni, raising $4k for UT Dallas scholarships and essential resources, while meticulously tracking engagement outcomes to enhance donor impact and student success.",
     },
   ],
@@ -124,16 +124,6 @@ export const DATA = {
   ],
   experience: [
     {
-      organization: "Headstarter AI",
-      href: "https://headstarter.co/",
-      role: "SWE Fellow",
-      logoUrl: "/headstarter.jpg",
-      start: "July 2024",
-      end: "Present",
-      description:
-        "Developed a personal website with NextJS, TypeScript, and React. Created a Pantry Tracker app using ReactJS, NextJS, and Firebase. Integrated AI customer support with OpenAI and AWS, enhancing user engagement. Managing shipments to 1,000+ users and delivering presentations to engineering teams.",
-    },
-    {
       organization: "User Experience Club",
       href: "https://uxutd.com/",
       role: "Vice President",
@@ -142,6 +132,16 @@ export const DATA = {
       end: "Present",
       description:
         "Lead a team of 17 in organizing the inaugural design-a-thon for UX Club at UTD, driving member engagement and collaboration within a community of 630+ members and 50+ sponsors.",
+    },
+    {
+      organization: "Headstarter AI",
+      href: "https://headstarter.co/",
+      role: "SWE Fellow",
+      logoUrl: "/headstarter.jpg",
+      start: "July 2024",
+      end: "September 2024",
+      description:
+        "Developed a personal website with NextJS, TypeScript, and React. Created a Pantry Tracker app using ReactJS, NextJS, and Firebase. Integrated AI customer support with OpenAI and AWS, enhancing user engagement. Managing shipments to 1,000+ users and delivering presentations to engineering teams.",
     },
     {
       organization: "SASE UTD",
@@ -209,12 +209,12 @@ export const DATA = {
       description:
         "A virtual kitchen companion that offers tailored recipe suggestions, meal planning, and shopping lists based on your preferences and ingredients.",
       technologies: [
-       "Next.js",
-       "Firebase",
-       "TailwindCSS",
-       "Stripe",
-       "Llama 3.1",
-       "MUI"
+        "Next.js",
+        "Firebase",
+        "TailwindCSS",
+        "Stripe",
+        "Llama 3.1",
+        "MUI"
       ],
       links: [
         {
@@ -251,6 +251,11 @@ export const DATA = {
           href: "https://nomnomnet.vercel.app",
           target: "_blank",
           icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/K-Kulshrestha/NomNomNet",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/NomNomNet.jpg",

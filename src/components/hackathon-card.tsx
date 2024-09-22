@@ -24,14 +24,14 @@ export function HackathonCard({
   links,
 }: Props) {
   return (
-    <li className="relative ml-10 py-4">
+    <li className="relative ml-12 py-4"> {/* Adjusted margin-left here */}
       <div className="absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full">
         <Avatar className="border size-12 m-auto">
           <AvatarImage src={image} alt={title} className="object-contain" />
           <AvatarFallback>{title[0]}</AvatarFallback>
         </Avatar>
       </div>
-      <div className="flex flex-1 flex-col justify-start gap-1">
+      <div className="flex flex-1 flex-col justify-start gap-1 pl-4"> {/* Added padding-left here */}
         {dates && (
           <time className="text-xs text-muted-foreground">{dates}</time>
         )}
@@ -43,13 +43,13 @@ export function HackathonCard({
           <span className="prose dark:prose-invert text-sm text-muted-foreground">
             {description}
           </span>
-        )}
+        )}  
       </div>
       {links && links.length > 0 && (
-        <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
-          {links?.map((link, idx) => (
+        <div className="mt-2 flex flex-row flex-wrap items-start gap-2 pl-4"> {/* Added padding-left here */}
+          {links.map((link, idx) => (
             <Link href={link.href} key={idx}>
-              <Badge key={idx} title={link.title} className="flex gap-2">
+              <Badge title={link.title} className="flex gap-2">
                 {link.icon}
                 {link.title}
               </Badge>
