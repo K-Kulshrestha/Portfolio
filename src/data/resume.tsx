@@ -59,16 +59,16 @@ export const DATA = {
         icon: Icons.linkedin,
         navbar: true,
       },
-      discord: {
+      Discord: {
         name: "Discord",
         url: "https://discordapp.com/users/360440853430534154",
-        icon: Icons.discord,
+        icon: Icons.Discord,
         navbar: true,
       },
-      email: {
+      Email: {
         name: "Send Email",
         url: "mailto:kshitijkuls6@gmail.com",
-        icon: Icons.email,
+        icon: Icons.Email,
         navbar: true,
       },
     },
