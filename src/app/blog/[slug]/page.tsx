@@ -8,19 +8,24 @@ import { Suspense } from "react";
 export async function generateMetadata({
   params,
 }: {
-  params: {
-    slug: string;
-  };
+  params: { slug: string };
 }): Promise<Metadata | undefined> {
-  let post = await getPost(params.slug);
+  const post = await getPost(params.slug);
 
-  let {
+  if (!post) {
+    return; // Return undefined for invalid slugs
+  }
+
+  const {
     title,
     publishedAt: publishedTime,
     summary: description,
     image,
   } = post.metadata;
-  let ogImage = image ? `${DATA.url}${image}` : `${DATA.url}/og?title=${title}`;
+
+  const ogImage = image
+    ? `${DATA.url}${image}`
+    : `${DATA.url}/og?title=${encodeURIComponent(title)}`;
 
   return {
     title,
@@ -31,11 +36,7 @@ export async function generateMetadata({
       type: "article",
       publishedTime,
       url: `${DATA.url}/blog/${post.slug}`,
-      images: [
-        {
-          url: ogImage,
-        },
-      ],
+      images: [{ url: ogImage }],
     },
     twitter: {
       card: "summary_large_image",
@@ -45,6 +46,7 @@ export async function generateMetadata({
     },
   };
 }
+
 
 export default async function Blog({
   params,
